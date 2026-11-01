@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitoblar katalogi</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/catalog.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/additional.css" />
+  </head>
+  <body>
+    <header class="site-header" id="main-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-mark">SK</div>
+          <div class="brand-text">
+            <span class="brand-title">Shahar kutubxonasi</span>
+            <span class="brand-subtitle">Bilimlar olami</span>
+          </div>
+        </div>
+        <nav aria-label="Asosiy menyu">
+          <ul class="nav-links">
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a class="active" href="catalog.html">Kitoblar katalogi</a></li>
+            <li><a href="services.html">Kutubxona xizmatlari</a></li>
+            <li><a href="events.html">Tadbirlar</a></li>
+            <li><a href="media.html">Multimedia</a></li>
+            <li><a href="contacts.html">Biz bilan bog‘lanish</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="btn btn-ghost" type="button">Kirish</button>
+          <button class="btn btn-secondary" type="button">A'zo bo‘lish</button>
+          <button class="btn btn-primary mobile-menu-toggle" type="button" aria-label="Mobil menyu" aria-expanded="false">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container">
+          <div class="breadcrumbs">Bosh sahifa / Kitoblar katalogi</div>
+          <h1>Kitoblar katalogi</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container catalog-layout">
+          <aside class="catalog-sidebar">
+            <div class="filter-panel">
+              <h3>Katalog filtrasi</h3>
+              <div class="filter-group">
+                <h4>Janrlar</h4>
+                <ul class="genre-list">
+                  <li><button class="genre-btn active" type="button" data-genre="Barchasi">Barchasi</button></li>
+                  <li><button class="genre-btn" type="button" data-genre="Badiiy adabiyot">Badiiy adabiyot</button></li>
+                  <li><button class="genre-btn" type="button" data-genre="Tarixiy adabiyot">Tarixiy adabiyot</button></li>
+                  <li><button class="genre-btn" type="button" data-genre="Ilmiy adabiyot">Ilmiy adabiyot</button></li>
+                  <li><button class="genre-btn" type="button" data-genre="Fantastika">Fantastika</button></li>
+                  <li><button class="genre-btn" type="button" data-genre="Sarguzasht">Sarguzasht</button></li>
+                  <li><button class="genre-btn" type="button" data-genre="Psixologiya">Psixologiya</button></li>
+                  <li><button class="genre-btn" type="button" data-genre="Bolalar adabiyoti">Bolalar adabiyoti</button></li>
+                  <li><button class="genre-btn" type="button" data-genre="Falsafa">Falsafa</button></li>
+                </ul>
+              </div>
+
+              <div class="filter-group">
+                <h4>Toifalar</h4>
+                <ul class="category-list">
+                  <li><button class="category-btn active" type="button">Barchasi</button></li>
+                  <li><button class="category-btn" type="button">Mashhurlar</button></li>
+                  <li><button class="category-btn" type="button">Yangi</button></li>
+                  <li><button class="category-btn" type="button">O‘quv qo‘llanmalari</button></li>
+                </ul>
+              </div>
+
+              <div class="filter-group">
+                <label for="availableOnly" class="checkbox-row">
+                  <input id="availableOnly" type="checkbox" />
+                  Faqat mavjud kitoblar
+                </label>
+              </div>
+            </div>
+          </aside>
+
+          <div class="catalog-results">
+            <div class="books-toolbar">
+              <div class="search-wrap">
+                <label for="bookSearch" class="hidden">Qidiruv</label>
+                <input id="bookSearch" type="search" placeholder="Kitob nomi yoki muallifni qidiring" aria-label="Kitoblarni qidirish" />
+              </div>
+              <div>
+                <label for="sortBooks">Saralash:</label>
+                <select id="sortBooks" aria-label="Kitoblarni saralash">
+                  <option value="title">Nomi bo‘yicha</option>
+                  <option value="year">Yil bo‘yicha</option>
+                </select>
+              </div>
+            </div>
+            <div id="booksGrid" class="books-grid" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>Shahar kutubxonasi</h3>
+            <p>Bilim va ma’rifat uchun doimiy manba.</p>
+          </div>
+          <div>
+            <h4>Sahifalar</h4>
+            <ul>
+              <li><a href="index.html">Bosh sahifa</a></li>
+              <li><a href="services.html">Xizmatlar</a></li>
+              <li><a href="events.html">Tadbirlar</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Kontaktlar</h4>
+            <ul>
+              <li>+998 71 200 10 10</li>
+              <li>info@shaharkutubxona.uz</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Bizning ijtimoiy tarmoqlar</h4>
+            <ul>
+              <li><a href="#">Telegram</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">© 2026 Shahar kutubxonasi.</div>
+      </div>
+    </footer>
+
+    <div id="bookModal" class="modal" aria-hidden="true">
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+
+    <button class="scroll-top" type="button" aria-label="Yuqoriga qaytish">↑</button>
+
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+  </body>
+</html>

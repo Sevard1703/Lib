@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bog‘lanish</title>
+    <meta name="description" content="Shahar kutubxonasi bilan bog‘lanish va murojaat yuborish." />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/additional.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header" id="main-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-mark">SK</div>
+          <div class="brand-text">
+            <span class="brand-title">Shahar kutubxonasi</span>
+            <span class="brand-subtitle">Bilimlar olami</span>
+          </div>
+        </div>
+        <nav aria-label="Asosiy menyu">
+          <ul class="nav-links">
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="catalog.html">Kitoblar katalogi</a></li>
+            <li><a href="services.html">Kutubxona xizmatlari</a></li>
+            <li><a href="events.html">Tadbirlar</a></li>
+            <li><a href="media.html">Multimedia</a></li>
+            <li><a class="active" href="contacts.html">Biz bilan bog‘lanish</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="btn btn-ghost" type="button">Kirish</button>
+          <button class="btn btn-secondary" type="button">A'zo bo‘lish</button>
+          <button class="btn btn-primary mobile-menu-toggle" type="button" aria-label="Mobil menyu" aria-expanded="false">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container">
+          <div class="breadcrumbs">Bosh sahifa / Bog‘lanish</div>
+          <h1>Bog‘lanish</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container map-wrap">
+          <div class="map-box">
+            <h2>Bog‘lanish ma’lumotlari</h2>
+            <ul class="contact-list">
+              <li><strong>Manzil:</strong> Mustaqillik ko‘chasi 15, Shahar markazi</li>
+              <li><strong>Telefon:</strong> +998 71 200 10 10</li>
+              <li><strong>Elektron pochta:</strong> info@shaharkutubxona.uz</li>
+              <li><strong>Ish vaqti:</strong> Dushanba-Shanba, 09:00 - 18:00</li>
+              <li><strong>Ijtimoiy tarmoqlar:</strong> Telegram, Instagram, YouTube</li>
+            </ul>
+
+            <div style="margin-top: 24px;">
+              <img class="image-map" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Kutubxona xaritasi" usemap="#libraryMap" />
+              <map name="libraryMap">
+                <area shape="rect" coords="20,20,240,180" href="catalog.html" alt="Kitoblar katalogi" />
+                <area shape="circle" coords="360,180,70" href="services.html" alt="O‘quv zali" />
+                <area shape="rect" coords="120,220,420,330" href="events.html" alt="Tadbirlar" />
+              </map>
+            </div>
+          </div>
+
+          <div class="contact-box">
+            <h2>Murojaat yuborish</h2>
+            <form id="contactForm" data-form="contact" novalidate>
+              <div class="form-grid">
+                <div class="field full">
+                  <label for="fullName">F.I.Sh.</label>
+                  <input id="fullName" name="fullName" type="text" required minlength="3" placeholder="F.I.Sh. kiriting" />
+                </div>
+                <div class="field">
+                  <label for="email">Elektron pochta</label>
+                  <input id="email" name="email" type="email" required placeholder="example@mail.com" />
+                </div>
+                <div class="field">
+                  <label for="phone">Telefon raqami</label>
+                  <input id="phone" name="phone" type="tel" required pattern="[0-9+()\s-]{10,}" placeholder="+998 90 123 45 67" />
+                </div>
+                <div class="field full">
+                  <label for="subject">Mavzu</label>
+                  <input id="subject" name="subject" type="text" required placeholder="Murojaat mavzusi" />
+                </div>
+                <div class="field full">
+                  <label for="message">Xabar matni</label>
+                  <textarea id="message" name="message" required minlength="10" placeholder="Xabaringizni yozing..."></textarea>
+                </div>
+                <div class="field full">
+                  <label class="checkbox-row" for="consent">
+                    <input id="consent" name="consent" type="checkbox" required />
+                    Men ma’lumotlarimni qayta ishlashga roziman.
+                  </label>
+                </div>
+              </div>
+              <div style="margin-top: 16px;">
+                <button class="btn btn-primary" type="submit">Yuborish</button>
+              </div>
+              <div class="notice" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Hujjatlar</h2>
+            <p>Kutubxona qoidalari va a’zo bo‘lish bo‘yicha materiallar.</p>
+          </div>
+          <ul class="document-list">
+            <li><a href="documents/library-rules.pdf" target="_blank" rel="noopener noreferrer">Kutubxona qo‘llanmasi</a></li>
+            <li><a href="documents/membership-guide.pdf" target="_blank" rel="noopener noreferrer">A’zo bo‘lish bo‘yicha qo‘llanma</a></li>
+            <li><a href="documents/reading-list.pdf" target="_blank" rel="noopener noreferrer">O‘qish ro‘yxati</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Shahar kutubxonasi</h3>
+          <p>Har doim sizga yordam berishga tayyormiz.</p>
+        </div>
+        <div>
+          <h4>Sahifalar</h4>
+          <ul>
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="catalog.html">Katalog</a></li>
+            <li><a href="events.html">Tadbirlar</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontaktlar</h4>
+          <ul>
+            <li>+998 71 200 10 10</li>
+            <li>info@shaharkutubxona.uz</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ijtimoiy tarmoqlar</h4>
+          <ul>
+            <li><a href="#">Telegram</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Shahar kutubxonasi.</div>
+    </footer>
+
+    <button class="scroll-top" type="button" aria-label="Yuqoriga qaytish">↑</button>
+
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+  </body>
+</html>

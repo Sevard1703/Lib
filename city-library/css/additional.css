@@ -1,0 +1,111 @@
+.document-list,
+.service-list,
+.event-list,
+.gallery-list,
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.document-box,
+.contact-box,
+.map-box,
+.service-card,
+.event-card,
+.media-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.document-box::before,
+.contact-box::before,
+.map-box::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 110px;
+  height: 110px;
+  background: linear-gradient(135deg, rgba(196, 154, 85, 0.18), transparent);
+  border-radius: 0 0 100% 0;
+}
+
+.service-list li,
+.document-list li,
+.contact-list li {
+  padding-left: 1rem;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.service-list li::before,
+.document-list li::before,
+.contact-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 1.4rem;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(23, 43, 77, 0.08);
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid rgba(23, 43, 77, 0.08);
+  padding: 14px 16px;
+  text-align: left;
+}
+
+.schedule-table thead th {
+  background: var(--primary);
+  color: white;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+  background: rgba(238, 242, 247, 0.8);
+}
+
+.schedule-table tbody tr:hover {
+  background: rgba(196, 154, 85, 0.12);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.map-wrap {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 28px;
+}
+
+.image-map {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 760px) {
+  .gallery-grid,
+  .map-wrap {
+    grid-template-columns: 1fr;
+  }
+}
