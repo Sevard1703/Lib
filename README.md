@@ -1,4 +1,4 @@
-# Shahar kutubxonasi — Bilimlar olami
+# Shahar kutubxonasi — Bilimlar olami~
 
 ## Loyiha haqida
 Ushbu loyiha shahar aholisi uchun mo‘ljallangan zamonaviy axborot-kutubxona veb-saytidir. Sayt orqali kitoblar katalogi, xizmatlar, tadbirlar, multimedia, kontaktlar va hujjatlarni ko‘rish mumkin.
